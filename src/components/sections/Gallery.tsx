@@ -6,7 +6,7 @@ import Image from "next/image";
 import { X, ZoomIn } from "lucide-react";
 
 const galleryImages = [
-  { src: "/reception.png", alt: "Luxury Reception Area", span: "md:col-span-2 md:row-span-2" },
+  { src: "/reception-new.png", alt: "Luxury Reception Area", span: "md:col-span-2 md:row-span-2" },
   { src: "/treatment_room.png", alt: "Advanced Treatment Room", span: "col-span-1 row-span-1" },
   { src: "/doctor.png", alt: "Expert Doctor", span: "col-span-1 row-span-2" },
   { src: "/hero.png", alt: "Premium Care", span: "col-span-1 row-span-1" },
@@ -54,6 +54,7 @@ export function Gallery() {
                 src={img.src} 
                 alt={img.alt} 
                 fill 
+                priority={i < 2}
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out" 
               />
@@ -92,7 +93,8 @@ export function Gallery() {
               <Image 
                 src={selectedImage} 
                 alt="Enlarged gallery image" 
-                fill 
+                fill
+                sizes="(max-width: 1024px) 100vw, 1024px"
                 className="object-contain" 
               />
             </motion.div>

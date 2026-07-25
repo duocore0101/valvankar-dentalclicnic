@@ -12,8 +12,6 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
 });
 
-import type { Metadata } from "next";
-
 export const metadata: Metadata = {
   title: "Valvankar Dental Clinic",
   description: "Premium Dental Care Designed Around Your Smile",

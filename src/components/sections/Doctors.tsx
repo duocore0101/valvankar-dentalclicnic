@@ -40,8 +40,8 @@ export function Doctors() {
             {/* Doctor Image */}
             <div className="md:w-2/5 relative aspect-square md:aspect-auto overflow-hidden bg-muted">
               <Image 
-                src="/doctor.png"
-                alt="Dr. Valvankar"
+                src="/doctor-mansi.png"
+                alt="Dr. Mansi Valvankar"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, 40vw"
@@ -52,22 +52,18 @@ export function Doctors() {
             {/* Doctor Details */}
             <div className="md:w-3/5 p-10 md:p-16 flex flex-col justify-center">
               <div className="mb-8">
-                <h3 className="text-3xl font-heading font-bold text-foreground mb-2">Dr. Valvankar</h3>
-                <p className="text-accent font-medium uppercase tracking-wider text-sm">Chief Dental Surgeon & Implantologist</p>
+                <h3 className="text-3xl font-heading font-bold text-foreground mb-2">Dr. Mansi Valvankar</h3>
+                <p className="text-accent font-medium uppercase tracking-wider text-sm">Orthodontist</p>
               </div>
               
               <div className="space-y-6 mb-10">
                 <div>
                   <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-1">Qualifications</h4>
-                  <p className="text-foreground font-medium">MDS (Prosthodontics), BDS</p>
+                  <p className="text-foreground font-medium">MDS (Orthodontics)</p>
                 </div>
                 <div>
-                  <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-1">Specialization</h4>
-                  <p className="text-foreground font-medium">Dental Implants, Full Mouth Rehabilitation, Cosmetic Dentistry</p>
-                </div>
-                <div>
-                  <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-1">Clinic Experience</h4>
-                  <p className="text-foreground font-medium">15+ Years of Clinical Excellence</p>
+                  <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-1">Location</h4>
+                  <p className="text-foreground font-medium">Pune</p>
                 </div>
               </div>
 

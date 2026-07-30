@@ -8,7 +8,7 @@ import { X, ZoomIn } from "lucide-react";
 const galleryImages = [
   { src: "/reception-new.png", alt: "Luxury Reception Area", span: "md:col-span-2 md:row-span-2" },
   { src: "/treatment_room.png", alt: "Advanced Treatment Room", span: "col-span-1 row-span-1" },
-  { src: "/doctor.png", alt: "Expert Doctor", span: "col-span-1 row-span-2" },
+  { src: "/doctor-mansi.png", alt: "Expert Doctor", span: "col-span-1 row-span-2" },
   { src: "/hero.png", alt: "Premium Care", span: "col-span-1 row-span-1" },
 ];
 

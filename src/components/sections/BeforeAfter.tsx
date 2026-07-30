@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function BeforeAfter() {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -80,10 +81,13 @@ export function BeforeAfter() {
         >
           {/* After Image (Background) */}
           <div className="relative w-full aspect-[16/9] bg-muted flex items-center justify-center">
-            {/* Placeholder for After image */}
-            <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary/20 flex items-center justify-center">
-              <span className="text-4xl font-heading font-bold text-white/50 mix-blend-overlay">AFTER</span>
-            </div>
+            <Image 
+              src="/smile_after.png"
+              alt="After treatment"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 896px"
+            />
             
             <span className="absolute bottom-6 right-6 bg-white/20 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-sm font-semibold border border-white/30 z-10">
               After
@@ -95,10 +99,13 @@ export function BeforeAfter() {
             className="absolute top-0 left-0 bottom-0 right-0 overflow-hidden bg-muted flex items-center justify-center"
             style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
           >
-             {/* Placeholder for Before image */}
-             <div className="absolute inset-0 bg-gradient-to-r from-slate-400 to-slate-500 flex items-center justify-center">
-               <span className="text-4xl font-heading font-bold text-white/50 mix-blend-overlay">BEFORE</span>
-             </div>
+             <Image 
+               src="/smile_before.png"
+               alt="Before treatment"
+               fill
+               className="object-cover"
+               sizes="(max-width: 1024px) 100vw, 896px"
+             />
              
              <span className="absolute bottom-6 left-6 bg-black/20 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-sm font-semibold border border-white/30 z-10">
               Before
